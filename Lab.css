@@ -39,11 +39,13 @@ Focus on applying proper CSS techniques such as:
 
    header #title{
       color: #3E2723;
+      font-size: 250%;
       font-family: Georgia, 'Times New Roman', Times, serif;
       font-weight: bold;
       letter-spacing: 1px;
       text-transform: uppercase;
       text-align: center;
+      background-color: #F5F5F5;
 
    }
 
@@ -55,15 +57,13 @@ Focus on applying proper CSS techniques such as:
 
    .navBar{
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      word-spacing: 100px;
       text-align: center;
+      
    }
 
-   #banner{
-      display: flex;
-      width: 500px;
-      height: 1000;
-      margin-left: auto;
-      
+   .navBar a:link{
+      text-decoration: none;
    }
 
    a[href="#bottomPage"] {
@@ -77,21 +77,77 @@ Focus on applying proper CSS techniques such as:
    }
 
     a[href="#bottomPage"]:hover {
-      background-color: green;
-    }
+      background-color: #4B3621;
+   }
+
    #tagline{
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-align: center;
+      font-size: large;
+      font-weight:bold;
    }
    
    h2{
+
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-align: center;
+   }
+
+   
+   #coffee_choices{
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+
+   .coffeeTitle{
+      padding-top: 50px;
+      padding-bottom: 20px;
+
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+
+   #coffee_choices .coffeeImg{
+      width: 120px;
+      height: 120px;
+
+      object-fit: cover;
+
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+   }
+
+   #coffee_choices .label{
+      font-size: 14px;
+      text-align: center;
+      padding-top: 8px;
+      vertical-align: top;
+      max-width: 120px;
+      word-wrap: break-word;
+      font-weight: bold;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    }
 
-   #coffee_choices{
-      display: flex;
-      justify-content: center;
-      align-items: right;
-      
+   a[href = "#title"]{
+      background-color: #C8A98B;
+      border: none;
+      color: antiquewhite;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      cursor: pointer;
+   }
+
+   a[href = "#title"]:hover{
+      background-color: #4B3621;
+   }
+
+   footer{
+      text-align: center;
    }
 }
 
