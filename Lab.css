@@ -97,6 +97,7 @@ Focus on applying proper CSS techniques such as:
 
 /* Home Page */
 .home{
+   background-color: #C8A98B;
 
    /* Page Banner */
 
@@ -195,4 +196,93 @@ Focus on applying proper CSS techniques such as:
    }
 
    /* Page Content */
+   .coffee {
+      margin-right: 60px;
+      margin-left: 40px;
+   }
+   .coffee h2 {
+      color: #3A2F28;
+      text-align: center;
+      font-size: 50px;
+   }
+
+   .coffee ol li {
+      font-size: 20px;
+      background-color: #EAD7C0;
+      color: #3A2F28;;
+      padding-top: 5px;
+      padding-bottom: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      line-height: 25px;
+   }
+
+   .coffee ol li::marker {
+      font-weight: bold;
+      color: #3A2F28;
+      font-size: 30px;
+   }
+
+   .coffee .definition {
+      float: right;
+      font-size: 27px;
+      margin: 70px 20px 10px 50px;
+      width: 50%;
+      font-weight: bold;
+      text-align: justify;
+      color: #6b4f3a;   
+   }
+
+   .coffee img {
+      float: left;
+      width: 600px;
+      height: auto;
+      margin: 50px 20px 30px 5px;
+   }
+
+   #orderCoffee {
+      font-size: 30px;  
+      clear: left;
+      display: inline-block;
+      margin: 40px 20px 10px 270px;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 20px;
+      color: #6b4f3a;
+      border: 3px solid #6b4f3a;
+      transition: 0.3s;
+      background-color: #C8A98B;
+   }
+
+   #orderCoffee:hover {
+      background-color: #8c664f;
+      color: #C8A98B;
+      border-color: #8c664f;
+   }
+
+   #bottomPage {
+      float: none;
+      margin: 100px 20px 10px 400px;
+      text-align: center;
+   }
+
+   a[href="#title"]{
+      font-size: 30px;
+      display: inline-block;
+      margin: 20px 10px 50px 645px;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 20px;
+      color: #6b4f3a;
+      border: 3px solid #6b4f3a;
+      transition: 0.3s;
+   }
+
+   a[href="#title"]:hover {
+      background-color: #8c664f;
+      color: #C8A98B;
+      border-color: #8c664f;
+   }
 }
