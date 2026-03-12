@@ -421,3 +421,171 @@ Focus on applying proper CSS techniques such as:
       border-color: #8c664f;
    }
 }
+
+/*About Page*/
+.about {
+   /*Navigation Bar + Hero Section */
+   hr::before {
+         /* fake background (lazy ahh) */
+         content: "";
+         display: block;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 570px;
+         background-color: #f2e6d9;
+         z-index: -1;
+      }
+   
+   #title {
+         color: #6b4f3a;
+   }
+   
+   .navBar {
+      position: absolute;
+      top: 20px;
+      right: 10px;
+   }
+   
+   .navBar .navigation {
+      font-size: 23px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      color: #6b4f3a;
+      padding: 10px 70px;
+      border-radius: 20px;
+   }
+   
+   .navBar .navigation:hover {
+      background-color: #8c664f;
+      color: #f2e6d9;
+      padding: 10px 70px;
+      border-radius: 20px;
+   }
+   
+   .navBar .navigation[href="home.html"] {
+      background-color: #8c664f;
+      color: #f2e6d9;
+      padding: 10px 70px;
+      border-radius: 20px;
+   }
+   
+      /* change page hover effect */
+      .navBar:hover .navigation:not(:hover) {
+         transform: none;
+         background-color: #f2e6d9;
+         color: #6b4f3a;
+      }
+   
+      #welcome {
+         float: left;
+         font-size: 45px;
+         margin: 50px 20px 10px 50px;
+         width: 50%;
+         font-weight: bold;
+         text-align: justify;
+         color: #6b4f3a;
+      }
+   
+      img[src="Images/CoffeeBanner.jpg"] {
+         float: right;
+         width: 600px;
+         height: auto;
+         margin: 10px 20px 30px 5px;
+      }
+   
+      hr {
+         clear: both;
+         border: none;
+         /* invisibled */
+      }
+   
+      a[href="#bottomPage"] {
+         font-size: 30px;
+         clear: left;
+         display: inline-block;
+         margin: 50px 20px 10px 300px;
+         text-decoration: none;
+         padding: 15px 30px;
+         border-radius: 20px;
+         color: #6b4f3a;
+         border: 3px solid #6b4f3a;
+         transition: 0.3s;
+      }
+   
+      a[href="#bottomPage"]:hover {
+         background-color: #8c664f;
+         color: #EAD7C0;
+         border-color: #8c664f;
+      }
+
+   /*Logo + Brief Description */   
+   img[src="Images/Logo.jpg"] {
+      max-width: 30%;
+      display: block;
+      margin: 0 auto;
+   }
+
+   .definition {
+      font-family: Tahoma, sans-serif;
+      text-align: center;
+   }
+
+   /*Favorite Coffee Songs Section*/
+   .coffee:has(.coffeeVideo) {
+      background-color: #f5e6d3;   
+   }
+
+   .coffee h2 {
+      text-align: center;
+   }
+
+   .coffee ul {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      padding: 0;
+      list-style: none;
+   }
+
+   .coffee ul li {
+      flex: 0 0 auto;
+   }
+
+   /*Team Section*/
+   table:has(.teamMember) {
+      width: max-content;
+      margin: 0 auto;
+      border-collapse: collapse;
+      text-align: center;
+      }
+   
+      table:has(.teamMember) tr:first-child {
+         display: table-row;
+      }
+   
+      table:has(.teamMember) tr:first-child td {
+         padding: 10px;
+      }
+   
+      table:has(.teamMember) tr:nth-child(2) {
+         display: table-row;
+      }
+   
+      table:has(.teamMember) tr:nth-child(2) td {
+         padding: 10px;
+         font-family: Tahoma, sans-serif;
+      }
+   
+      .teamMember {
+         width: 225px;
+         height: 225px;
+         border-radius: 15px;
+         object-fit: cover;
+         display: block;
+         margin: 0 auto;
+      }
+
+}
